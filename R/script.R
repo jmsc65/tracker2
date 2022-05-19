@@ -19,6 +19,6 @@ CBHB <- read.csv(temp)
 
 ## write csv cancelled ops by health board, new data scraped after automation will be appended
 
-write.table(data, "data/CBHB.csv", 
+write.table(CBHB, "data/CBHB.csv", 
             sep = ",", col.names = !file.exists("CBHB.csv"),
             append = T, row.names = F)
